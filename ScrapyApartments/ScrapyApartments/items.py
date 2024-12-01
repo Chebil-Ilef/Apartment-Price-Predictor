@@ -6,7 +6,12 @@
 import scrapy
 
 
-class ScrapyapartmentsItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+class TayaraItem(scrapy.Item):
+    gouvernorat= scrapy.Field()
+    delegation= scrapy.Field()
+    superficie= scrapy.Field()
+    salle_de_bains= scrapy.Field()
+    chambres= scrapy.Field()
+    prix= scrapy.Field()
+    description= scrapy.Field()
+
