@@ -66,9 +66,10 @@ ROBOTSTXT_OBEY = False
 #     "ScrapyApartments.pipelines.MongoPipelineTayara": 300,
 # }
 
-# ITEM_PIPELINES = {
-#     "ScrapyApartments.pipelines.MongoPipelineTayara": 300,
-# }
+ITEM_PIPELINES = {
+    "ScrapyApartments.pipelines.MongoPipelineTayara": 300,
+    "ScrapyApartments.pipelines.MongoPipelineMubawab": 200,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
