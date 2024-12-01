@@ -7,6 +7,7 @@ import scrapy
 
 
 class TayaraItem(scrapy.Item):
+    _id= scrapy.Field()
     gouvernorat= scrapy.Field()
     delegation= scrapy.Field()
     superficie= scrapy.Field()

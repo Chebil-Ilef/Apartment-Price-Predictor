@@ -4,13 +4,15 @@ import scrapy
 class TayaraSpider(scrapy.Spider):
     name = 'tayara'
     allowed_domains = ['tayara.tn']
-    base_url = 'https://www.tayara.tn/ads/c/Immobilier/Appartements/l/Tunis/k/vendre/?page={}'
+    list_of_gouvernorats = ['Tunis', 'Ariana', 'Ben Arous', 'La Manouba']
+    base_url = 'https://www.tayara.tn/ads/c/Immobilier/Appartements/l/{}/k/vendre/?page={}'
     
     def start_requests(self):
-        # Start by requesting the first page
-        for page in range(1, 29):  # Page range from 1 to 28
-            url = self.base_url.format(page)
-            yield scrapy.Request(url=url, callback=self.parse)
+        for gouvernorat in self.list_of_gouvernorats:
+            # request pages from 1 to 30
+            for page in range(1, 30): 
+                url = self.base_url.format(gouvernorat,page)
+                yield scrapy.Request(url=url, callback=self.parse)
 
     def parse(self, response):
         # all links in a single page

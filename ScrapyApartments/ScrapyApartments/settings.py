@@ -62,9 +62,9 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    "ScrapyApartments.pipelines.ScrapyapartmentsPipeline": 300,
-#}
+ITEM_PIPELINES = {
+    "ScrapyApartments.pipelines.MongoPipelineTayara": 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
@@ -90,3 +90,22 @@ ROBOTSTXT_OBEY = True
 # Set settings whose default value is deprecated to a future-proof value
 TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
 FEED_EXPORT_ENCODING = "utf-8"
+
+# # For MongoDB ATLAS connection
+# import os
+# from dotenv import load_dotenv
+
+# load_dotenv()
+
+# MONGO_USER = os.getenv('MONGO_USER')
+# MONGO_PASSWORD = os.getenv('MONGO_PASSWORD')
+# MONGO_DB = os.getenv('MONGO_DB')
+
+# MONGO_URI = f"mongodb+srv://{MONGO_USER}:{MONGO_PASSWORD}@cluster0.oxo3h.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+# MONGO_DATABASE = MONGO_DB
+
+# # For local MongoDB connection
+MONGO_URI = "mongodb://localhost:27017"
+MONGO_DATABASE = "apartments_db"
+
+
