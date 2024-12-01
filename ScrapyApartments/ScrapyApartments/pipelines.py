@@ -5,6 +5,13 @@
 
 
 # useful for handling different item types with a single interface
+# Define your item pipelines here
+#
+# Don't forget to add your pipeline to the ITEM_PIPELINES setting
+# See: https://docs.scrapy.org/en/latest/topics/item-pipeline.html
+
+
+# useful for handling different item types with a single interface
 import hashlib
 import pymongo
 from itemadapter import ItemAdapter
@@ -33,6 +40,8 @@ class MongoPipelineTayara:
         self.client.close()
 
     def process_item(self, item, spider):
+        if spider.name != "tayara":
+            return None
         # core functionnalities (clean, insert ..)
         item_id = self.compute_item_id(item)
         if self.db[self.COLLECTION_NAME].find_one({"_id": item_id}):
@@ -53,3 +62,5 @@ class MongoPipelineTayara:
             str(item.get("description", ""))
         )
         return hashlib.sha256(unique_data.encode()).hexdigest()
+
+

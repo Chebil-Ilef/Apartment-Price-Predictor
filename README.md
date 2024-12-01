@@ -10,3 +10,6 @@ create your own .env:
 MONGO_USER=..
 MONGO_PASSWORD=..
 MONGO_DB=..
+
+
+scrapy genspider book https://books.toscrape.com/
