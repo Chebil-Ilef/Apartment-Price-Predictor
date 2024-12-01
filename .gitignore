@@ -1,2 +1,6 @@
 
 /.vscode
+
+/ScrapyApartments/ScrapyApartments/spiders/__pycache__
+/ScrapyApartments/ScrapyApartments/__pycache__
+/.env
