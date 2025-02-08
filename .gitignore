@@ -10,3 +10,5 @@
 catboost_info
 
 generated/
+
+compressed_models/
