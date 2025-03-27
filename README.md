@@ -16,13 +16,13 @@ We used the **Scrapy framework** to extract apartment sales listings, followed b
 
 ```
 APARTMENTS-SALES/
-│-- cleaning/               # Jupyter notebooks for data cleaning
+│-- cleaning/                               # Jupyter notebooks for data cleaning
 │   ├── cleaning_menzili.ipynb
 │   ├── cleaning_mubawab.ipynb
 │   ├── concat_csvs.ipynb
 │
 │-- csv/
-│   ├── after_cleaning/      # Preprocessed and merged datasets
+│   ├── after_cleaning/                     # Preprocessed and merged datasets
 │   │   ├── menzili_preprocessed.csv        # Cleaned data from Menzili.tn
 │   │   ├── mubawab_preprocessed.csv        # Cleaned data from Mubawab.tn
 │   │   ├── tayara_preprocessed.csv         # Cleaned data from Tayara.tn
@@ -64,7 +64,7 @@ APARTMENTS-SALES/
 
 We experimented with multiple regression models to predict apartment prices:
 
-**Linear Regression** **Decision Tree Regressor** **Random Forest Regressor** **Support Vector Machine (SVM) Regressor** **XGBoost** **CatBoost**
+**Linear Regression** - **Decision Tree Regressor** - **Random Forest Regressor** - **Support Vector Machine (SVM) Regressor** - **XGBoost** - **CatBoost**
 
 ## How to Use
 
