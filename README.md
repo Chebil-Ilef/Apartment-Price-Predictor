@@ -1,6 +1,6 @@
-# 🏡 Apartment Sales Price Prediction
+# Apartment Sales Price Prediction
 
-## 📌 Project Overview
+## Project Overview
 
 This project aims to predict apartment sales prices in Tunis (Tunisia) based on key features such as governorate, delegation, area (m²), number of rooms, and other relevant factors. 
 
@@ -12,7 +12,7 @@ By leveraging real estate data scraped from three major listing websites:
 
 We used the **Scrapy framework** to extract apartment sales listings, followed by extensive **data cleaning, preprocessing, and machine learning modeling** to predict apartment prices.
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```
 APARTMENTS-SALES/
@@ -51,7 +51,7 @@ APARTMENTS-SALES/
 │-- requirements.txt         # Dependencies
 ```
 
-## 🔨 Technologies Used
+## Technologies Used
 
 - **Python** 🐍
 - **Scrapy** for Web Scraping 🕷️
@@ -60,13 +60,13 @@ APARTMENTS-SALES/
 - **Matplotlib, Seaborn** for Data Visualization 📈
 - **Jupyter Notebooks** for experimentation 📑
 
-## 📊 Machine Learning Models Used
+## Machine Learning Models Used
 
 We experimented with multiple regression models to predict apartment prices:
 
-✅ **Linear Regression** ✅ **Decision Tree Regressor** ✅ **Random Forest Regressor** ✅ **Support Vector Machine (SVM) Regressor** ✅ **XGBoost** ✅ **CatBoost**
+**Linear Regression** **Decision Tree Regressor** **Random Forest Regressor** **Support Vector Machine (SVM) Regressor** **XGBoost** **CatBoost**
 
-## 🚀 How to Use
+## How to Use
 
 ### 1️⃣ Install Dependencies
 
@@ -96,12 +96,12 @@ Run the notebooks in `modeling/` to train and evaluate different machine learnin
 
 Use the `visualization/` notebooks to analyze and interpret the dataset.
 
-## 📌 Results & Insights
+## Results & Insights
 
 - **Data Insights:** After data cleaning, we observed key pricing trends across different regions and property sizes.
 - **Model Performance:** CatBoost and XGBoost outperformed other models in terms of accuracy and predictive performance.
 - **Feature Importance:** Location, apartment size, and number of rooms were the most influential factors affecting prices.
 
-## 🤝 Contributions
+## Contributions
 
-Feel free to contribute! Fork the repo, make your changes, and submit a pull request. 🚀
+Feel free to contribute! Fork the repo, make your changes, and submit a pull request.
